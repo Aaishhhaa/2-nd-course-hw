@@ -1,11 +1,13 @@
 let a = 10;
-alert (a + 10);
+alert (a);
+a = 20;
+alert (a);
 
 let Iphone = 2007;
-console.log (Iphone);
+alert(Iphone);
 
 let Creator = 'Брендан Эйх';
-console.log (Creator);
+alert(Creator);
 
 let x = 10;
 let y = 2;
@@ -23,12 +25,12 @@ let bum = a % b;
 alert(bum);
 
 let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num += 1;
-num -= 1;
+num += 5
+num -= 3
+num *= 7
+num /= 3
+num ++
+num --
 alert(num);
 
 let age = prompt('Сколько вам лет?');
@@ -39,19 +41,19 @@ const user = {
     age: 22,
     isAdmin: true,
  }
- user.cityOfResidence = 'Magas';
+ user['city of residence'] = 'Magas';
 
  user.age = 23;
 
  alert(user.age)
 
- delete user.cityOfResidence;
+ delete user['city of residence'];
 
  let info = prompt('Какую информацию хотите узнать о пользователе?');
  alert(user[info])
  
- let Name = prompt('Как тебя зовут ?', 'Имя');
- alert(`Привет, ${Name}!`);
+ let name = prompt('Как тебя зовут ?', 'Имя');
+ alert(`Привет, ${name}!`);
 
 
  
