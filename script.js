@@ -44,7 +44,6 @@ const user = {
  user['city of residence'] = 'Magas';
 
  user.age = 23;
-
  alert(user.age)
 
  delete user['city of residence'];
