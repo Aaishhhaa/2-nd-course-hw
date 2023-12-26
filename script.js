@@ -1,59 +1,85 @@
-let a = 10;
-alert (a);
-a = 20;
-alert (a);
-
-let Iphone = 2007;
-alert(Iphone);
-
-let Creator = 'Брендан Эйх';
-alert(Creator);
-
-let x = 10;
-let y = 2;
-alert(x + y);
-alert(x - y);
-alert(x * y);
-alert(x / y);
-
-let result = 2 ** 5;
-alert(result);
-
-a = 9;
-b = 2;
-let bum = a % b;
-alert(bum);
-
-let num = 1;
-num += 5
-num -= 3
-num *= 7
-num /= 3
-num ++
-num --
-alert(num);
-
-let age = prompt('Сколько вам лет?');
-alert(age);
-
-const user = {
-    name: 'Aisha',
-    age: 22,
-    isAdmin: true,
- }
- user['city of residence'] = 'Magas';
-
- user.age = 23;
- alert(user.age)
-
- delete user['city of residence'];
-
- let info = prompt('Какую информацию хотите узнать о пользователе?');
- alert(user[info])
- 
- let name = prompt('Как тебя зовут ?', 'Имя');
- alert(`Привет, ${name}!`);
+let password = '12345';
+let user = prompt('Введите пароль');
+if (user === prompt) {
+    alert("пароль введен верно") 
+} else {
+    alert("пароль введен неверно")
+};
 
 
+let c = 25;
+if (c > 0 && c < 10) {
+    console.log('Верно')
+} else {
+    console.log('Неверно')
+};
+
+
+let d = 188;
+let e = 77;
+if (d > 100 || e > 100) {
+    console.log('Верно')
+} else {
+    console.log('Неверно')
+};
  
 
+let a = '2';
+let b = '3';
+
+alert(+a + +b);
+
+
+let month = +prompt('Какой сейчас месяц?');
+switch(month){
+    case 12, 1, 2:
+    console.log('Зима');
+    break;
+    case 3, 4, 5:
+    console.log('Весна');
+    break;
+    case 6, 7, 8:
+    console.log('Лето');
+    break;
+    case 9, 10, 11:
+    console.log('Осень');
+    break;
+    default:
+    console.log('Такого месяца не существует');
+    break;
+}
+
+
+let number = +prompt('Пожалуйста, введите любое число');
+if (number !== NaN)
+    if(number % 2 === 0){
+        console.log('четное число')
+    } else { console.log('нечетное число')
+}
+alert(number);
+
+
+const clientOS = 1;
+if (clientOS === 1) {
+    console.log('Установите версию приложения для iOS по ссылке')
+} else {
+    console.log('Установите версию приложения для Android по ссылке')
+}
+
+const clientOS2 = 1;
+const clientDeviceYear = 2015;
+
+if(clientOS === 1){
+    if(clientDeviceYear < 2015){
+       console.log('установите облегченное приложение на Android')
+    } else{ 
+        console.log('установите обычное приложение на Android')
+    }
+} else {
+   if(clientDeviceYear < 2015){
+        console.log('установите облегченное приложение на IOS')
+    }
+    else {
+        console.log('установите обычное приложение на IOS') 
+    }
+}
