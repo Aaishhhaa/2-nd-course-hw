@@ -51,7 +51,7 @@ switch(month){
 
 
 let number = +prompt('Пожалуйста, введите любое число');
-if (number !== NaN)
+if (isNaN(number))
     if(number % 2 === 0){
         console.log('четное число')
     } else { console.log('нечетное число')
