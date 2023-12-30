@@ -1,59 +1,45 @@
-let a = 10;
-alert (a);
-a = 20;
-alert (a);
-
-let Iphone = 2007;
-alert(Iphone);
-
-let Creator = 'Брендан Эйх';
-alert(Creator);
-
-let x = 10;
-let y = 2;
-alert(x + y);
-alert(x - y);
-alert(x * y);
-alert(x / y);
-
-let result = 2 ** 5;
-alert(result);
-
-a = 9;
-b = 2;
-let bum = a % b;
-alert(bum);
-
-let num = 1;
-num += 5
-num -= 3
-num *= 7
-num /= 3
-num ++
-num --
-alert(num);
-
-let age = prompt('Сколько вам лет?');
-alert(age);
-
-const user = {
-    name: 'Aisha',
-    age: 22,
-    isAdmin: true,
- }
- user['city of residence'] = 'Magas';
-
- user.age = 23;
- alert(user.age)
-
- delete user['city of residence'];
-
- let info = prompt('Какую информацию хотите узнать о пользователе?');
- alert(user[info])
- 
- let name = prompt('Как тебя зовут ?', 'Имя');
- alert(`Привет, ${name}!`);
+let = 0;
+for (let i = 'Привет'; i < 2; i++) {
+    console.log(i);
+}
 
 
- 
+let a = 1;
 
+while (a < 6) {
+    console.log(a);
+    a++;
+}
+
+
+let j = 7;
+
+while(j <= 22){
+    console.log(j);
+    j++;
+}
+
+
+const obj = {
+    'Вася': 200,
+    'Петя': 300,
+    'Коля': 400
+}
+for(let key in obj) {
+    console.log(`${key} - зарплата ${obj[key]} долларов.`);
+}
+let n = 1000;
+let num = 0;
+while(n > 50){
+    n = n / 2
+    console.log(n);
+    num++
+};
+
+
+let firstDay = 5;
+let daysMonth = 31;
+while(firstDay <= 31 ){
+    console.log(`Сегодня пятница ${firstDay} число`)
+    firstDay += 7
+}
