@@ -1,6 +1,6 @@
-let = 0;
-for (let i = 'Привет'; i < 2; i++) {
-    console.log(i);
+
+for (let i = 0; i < 2; i++) {
+    console.log('Привет');
 }
 
 
@@ -35,10 +35,9 @@ while(n > 50){
     console.log(n);
     num++
 };
-
+console.log(num);
 
 let firstDay = 5;
-let daysMonth = 31;
 while(firstDay <= 31 ){
     console.log(`Сегодня пятница ${firstDay} число`)
     firstDay += 7
