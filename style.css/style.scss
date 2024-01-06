@@ -19,6 +19,7 @@ a{
     background-position: center;
     background-size: cover;
     height: 1024px;
+    min-width: 1200px;
     & span{
         font-weight: 700;
     }
@@ -42,13 +43,14 @@ a{
         background: #EB443F
     }
     &__button{
-        margin-top: 44px;
+        margin-top: 57px;
         width: 234px;
         height: 49px;
         border: 0px;
         border-radius: 30px;
         background: #9C0332; 
         color: #FFF;
+        font-family: inherit;
         font-size: 18px;
         font-weight: 400;
         cursor: pointer;
@@ -64,8 +66,12 @@ a{
     background: #000915;
 }
 .menu {
-    width: 100%;
-    background: #000915;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-color: #000915;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
     &__items {
         display: flex;
         align-items: center;
@@ -76,15 +82,15 @@ a{
     &__item:hover{
         transform: scale(1.1);
         border: 3px solid #44D2FF;
-      }
-    &__item {
-        position: relative;
-        width: 379px;
+    }
+    &__item{
+        width: 378px;
         height: 300px;
-        border-radius: 16px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        border-radius: 18px;
+        box-sizing: border-box;
         transition: all 0.3s;
     }
     &__item:nth-child(1) {
@@ -117,6 +123,7 @@ a{
     justify-content: space-around;
     align-items: center;
     &__box{
+        max-width: 584px;
         display: flex;
         flex-direction: column;
         gap: 32px;
@@ -131,7 +138,7 @@ a{
         font-size: 18px;
         font-weight: 300;
         line-height: 32px;
-        width: 584px;
+        // width: 584px;
       }
     &__button:hover {
         transform: scale(1.1);
@@ -144,6 +151,7 @@ a{
         border-radius: 30px;
         background: #9C0332;
         color: #FFF;
+        font-family: inherit;
         font-size: 18px;
         font-weight: 400;
         cursor: pointer;
@@ -151,6 +159,7 @@ a{
         transition: all 0.3s;
       }
     &__one{
+        width: 485px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -161,16 +170,17 @@ a{
 /* mobile */
 
 
-@media (max-width: 745px) {
+@media (max-width: 767px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: сalc(50% - 375px / 2);
+    padding-right: сalc(50% - 375px / 2);
   }
   .top{
     background-image: url(/img/top_m.png);
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 735px;
     &__title{
         padding-top: 238px;
         font-size: 32px;
