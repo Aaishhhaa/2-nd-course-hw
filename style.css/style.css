@@ -11,9 +11,10 @@ body {
 a {
   text-decoration: none;
 }
+
 .container {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .top {
@@ -21,38 +22,38 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* height: 1024px; */
+  height: 1024px;
 }
 .top span {
   font-weight: 700;
 }
 .top__title {
-  max-width: 788px;
+  width: 667px;
   padding-top: 217px;
-  color: #FFF;
+  color: #fff;
   font-size: 64px;
   font-weight: 700;
 }
 .top__text {
   padding-top: 32px;
-  max-width: 481px;
-  color: #FFF;
+  width: 80%;
+  color: #fff;
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
 }
 .top__button:hover {
   transform: scale(1.1);
-  background: #EB443F;
+  background: #eb443f;
 }
 .top__button {
-  margin-top: 57px;
+  margin-top: 44px;
   width: 234px;
   height: 49px;
   border: 0px;
   border-radius: 30px;
-  background: #9C0332;
-  color: #FFF;
+  background: #9c0332;
+  color: #fff;
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
@@ -61,12 +62,6 @@ a {
 }
 
 /* main */
-.main {
-  width: 100%;
-  height: 556px;
-  background: #000915;
-}
-
 .menu {
   width: 100%;
   background: #000915;
@@ -80,7 +75,7 @@ a {
 }
 .menu__item:hover {
   transform: scale(1.1);
-  border: 3px solid #44D2FF;
+  border: 3px solid #44d2ff;
 }
 .menu__item {
   position: relative;
@@ -128,12 +123,12 @@ a {
   gap: 32px;
 }
 .game__name {
-  color: #FFF;
+  color: #fff;
   font-size: 48px;
   font-weight: 700;
 }
 .game__text {
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
@@ -141,15 +136,15 @@ a {
 }
 .game__button:hover {
   transform: scale(1.1);
-  background: #EB443F;
+  background: #eb443f;
 }
 .game__button {
   width: 234px;
   height: 49px;
   border: 0px;
   border-radius: 30px;
-  background: #9C0332;
-  color: #FFF;
+  background: #9c0332;
+  color: #fff;
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
@@ -160,6 +155,11 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 20%;
+}
+.game__one img {
+  width: 150%;
+  margin-left: -50px;
 }
 
 /* mobile */
@@ -205,6 +205,7 @@ a {
     flex-direction: column;
     gap: 64px;
     align-items: center;
+    width: 100%;
   }
   .game__box {
     display: flex;
@@ -220,7 +221,7 @@ a {
     text-align: center;
     width: 343px;
   }
-  .game__one {
-    background-image: url(/img/game_m1.svg);
+  .game__one img {
+    width: 200%;
   }
 }/*# sourceMappingURL=style.css.map */
