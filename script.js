@@ -55,7 +55,6 @@ console.log(numbers(5, 5));
 console.log(numbers('auu', 5));
 
 
-
 function data() {
     let numerik = prompt('Запишите любое число ?');
     if(isNaN(numerik)){
@@ -113,17 +112,6 @@ function seasons() {
 // console.log(seasons(7));
 // console.log(seasons(9));
 // console.log(seasons(13));
-
-
-
-
-
-
-
-
-
-
-
 
 
 
