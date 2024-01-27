@@ -117,6 +117,9 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+.game:nth-child(3) {
+  flex-direction: row-reverse;
+}
 .game__box {
   display: flex;
   flex-direction: column;
@@ -151,13 +154,13 @@ a {
   cursor: url(/img/cursor.svg), auto;
   transition: all 0.3s;
 }
-.game__one {
+.game__img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 20%;
 }
-.game__one img {
+.game__img img {
   width: 150%;
   margin-left: -50px;
 }
@@ -207,6 +210,9 @@ a {
     align-items: center;
     width: 100%;
   }
+  .game:nth-child(3) {
+    flex-direction: column;
+  }
   .game__box {
     display: flex;
     align-items: center;
@@ -221,7 +227,7 @@ a {
     text-align: center;
     width: 343px;
   }
-  .game__one img {
+  .game__img img {
     width: 200%;
   }
 }/*# sourceMappingURL=style.css.map */
