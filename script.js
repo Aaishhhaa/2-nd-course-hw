@@ -230,16 +230,18 @@ function seasons() {
 // console.log(summ / array3.length);
 
 
+// dz7
 
 
 
+// 1 задание 
+const lowerCaseString = 'js';
+const upperCaseString = lowerCaseString.toUpperCase();
+console.log(upperCaseString); 
 
 
 
-
-
-
-
+// 2 задание 
 let num = 32.58884; 
 
 Math.round(num);
@@ -248,20 +250,34 @@ Math.ceil(num);
 
 
 
+// 3 задание 
+function searchStart(array, str) {
+  return array.filter((el) => el.toLowerCase().startsWith(str.toLowerCase()))
+  }
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); // ['Кошка', 'Комар']
+console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
+console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
+
+
+
+
+// 4 задание 
 let numbers = [52, 53, 49, 77, 21, 32];
 
 Math.max(...numbers);
 Math.min(...numbers);
 
 
-
+// 5 задание 
 function getRandomNumber() {
-    console.log(Math.floor(Math.random() * 10 + 1)); // 0.787 * 10 = 7.87 = 7
+    console.log(Math.floor(Math.random() * 10 + 1)); 
  }
 
  getRandomNumber()
 
 
+
+//  6 задание 
  function getRandomArrNumbers(num) {
     let length = Math.floor(num / 2);
     let arr = []
@@ -276,6 +292,8 @@ function getRandomNumber() {
 getRandomArrNumbers(10);
 
 
+
+// 7 задание 
 function getRandomNumber(min, max) {
    return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -284,7 +302,7 @@ function getRandomNumber(min, max) {
 getRandomNumber(4, 12);
 
 
-
+// 8 задание 
 let date = new Date();
 console.log(date.toLocaleDateString('ru-RU'));
 
@@ -295,16 +313,27 @@ console.log(currentDate);
 
 
 
-
+// 9 задание 
 function getFullDate(d) {
     return `Дата: ${d.getDate()} ${d
       .getMonth()
       .toLocaleString('ru-RU')} ${d.getFullYear()} \n 
-    Время: ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()} `;
+    Время: ${d.getHours() < 10? '0' + d.getHours():d.getHours()}:${d.getMinutes() < 10? '0' + d.getMinutes():d.getMinutes()}:${d.getSeconds() < 10? '0' + d.getSeconds():d.getSeconds()} `;
   }
 
 
 
+// 10 задание 
+function getFullDate(d) {
+  return `Дата: ${d.getDate()} ${d
+    .getMonth()
+    .toLocaleString('ru-RU')} ${d.getFullYear()} \n 
+  Время: ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()} `;
+}
+
+
+
+// 11 задание
   function game() {
     let array = [
       'Яблоко',
@@ -317,11 +346,11 @@ function getFullDate(d) {
     ];
   
     alert(array.join(' '))
-    let firstElement = prompt('Чему равнялся первый элемент массива?')
-    let lastElement = prompt('Чему равнялся последний элемент массива?')
+    let firstElement = prompt('Чему равнялся первый элемент массива?').toLowerCase()
+    let lastElement = prompt('Чему равнялся последний элемент массива?').toLowerCase()
   
-    if(firstElement === array[0] && lastElement === array[array.length - 1]) alert('Вы победили')
-    else if(firstElement === array[0] || lastElement === array[array.length - 1]) alert('Вы были близки к победе')
+    if(firstElement === array[0].toLowerCase() && lastElement === array[array.length - 1].toLowerCase()) alert('Вы победили')
+    else if(firstElement === array[0].toLowerCase() || lastElement === array[array.length - 1].toLowerCase()) alert('Вы были близки к победе')
     else alert('Вы проиграли')
   
   }
