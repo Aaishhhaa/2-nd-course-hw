@@ -255,6 +255,7 @@ console.log(upperCaseString);
 
 
 
+
 // 2 задание 
 let num = 32.58884; 
 
