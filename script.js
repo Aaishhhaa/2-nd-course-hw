@@ -149,10 +149,24 @@ function seasons() {
 
 
 
-// const au = [9, 8, 7, 'a', 6, 5];
-// au.sort((a, b) => a - b);
-// let result = au.filter(item => typeof item === 'number');
-// console.log(result);
+
+
+const au = [9, 8, 7, 'a', 6, 5];
+au.sort((a, b) => a - b);
+let result = au.filter(item => typeof item === 'number');
+console.log(result);
+
+function data() {
+    let numerik = prompt('Запишите любое число ?');
+    if(isNaN(numerik)){
+        return "Данный параметр не является числом"
+    } else {
+        return `n в кубе = ${numerik ** 3}`
+    } 
+}
+data();
+
+
 
 
 // const inp = [9, 8, 7, 6, 5];
@@ -332,7 +346,6 @@ function getFullDate(d) {
 }
 
 
-
 // 11 задание
   function game() {
     let array = [
@@ -354,5 +367,6 @@ function getFullDate(d) {
     else alert('Вы проиграли')
   
   }
+
 
 
