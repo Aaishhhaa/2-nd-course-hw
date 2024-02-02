@@ -151,20 +151,20 @@ function seasons() {
 
 
 
-const au = [9, 8, 7, 'a', 6, 5];
-au.sort((a, b) => a - b);
-let result = au.filter(item => typeof item === 'number');
-console.log(result);
+// const au = [9, 8, 7, 'a', 6, 5];
+// au.sort((a, b) => a - b);
+// let result = au.filter(item => typeof item === 'number');
+// console.log(result);
 
-function data() {
-    let numerik = prompt('Запишите любое число ?');
-    if(isNaN(numerik)){
-        return "Данный параметр не является числом"
-    } else {
-        return `n в кубе = ${numerik ** 3}`
-    } 
-}
-data();
+// function data() {
+//     let numerik = prompt('Запишите любое число ?');
+//     if(isNaN(numerik)){
+//         return "Данный параметр не является числом"
+//     } else {
+//         return `n в кубе = ${numerik ** 3}`
+//     } 
+// }
+// data();
 
 
 
@@ -248,103 +248,103 @@ data();
 
 
 
-// 1 задание 
-const lowerCaseString = 'js';
-const upperCaseString = lowerCaseString.toUpperCase();
-console.log(upperCaseString); 
+// // 1 задание 
+// const lowerCaseString = 'js';
+// const upperCaseString = lowerCaseString.toUpperCase();
+// console.log(upperCaseString); 
 
 
 
 
-// 2 задание 
-let num = 32.58884; 
+// // 2 задание 
+// let num = 32.58884; 
 
-Math.round(num);
-Math.floor(num); 
-Math.ceil(num);
-
-
-
-// 3 задание 
-function searchStart(array, str) {
-  return array.filter((el) => el.toLowerCase().startsWith(str.toLowerCase()))
-  }
-console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); // ['Кошка', 'Комар']
-console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
-console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
+// Math.round(num);
+// Math.floor(num); 
+// Math.ceil(num);
 
 
 
-
-// 4 задание 
-let numbers = [52, 53, 49, 77, 21, 32];
-
-Math.max(...numbers);
-Math.min(...numbers);
-
-
-// 5 задание 
-function getRandomNumber() {
-    console.log(Math.floor(Math.random() * 10 + 1)); 
- }
-
- getRandomNumber()
+// // 3 задание 
+// function searchStart(array, str) {
+//   return array.filter((el) => el.toLowerCase().startsWith(str.toLowerCase()))
+//   }
+// console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')); // ['Кошка', 'Комар']
+// console.log(searchStart(['яблоко', 'груша', 'гриб', 'огурец'], 'гру')); // ['груша']
+// console.log(searchStart(['Дом', 'Банк', 'Больница', 'Театр'], 'Кино')); // []
 
 
 
-//  6 задание 
- function getRandomArrNumbers(num) {
-    let length = Math.floor(num / 2);
-    let arr = []
+
+// // 4 задание 
+// let numbers = [52, 53, 49, 77, 21, 32];
+
+// Math.max(...numbers);
+// Math.min(...numbers);
+
+
+// // 5 задание 
+// function getRandomNumber() {
+//     console.log(Math.floor(Math.random() * 10 + 1)); 
+//  }
+
+//  getRandomNumber()
+// for
+
+
+// //  6 задание 
+//  function getRandomArrNumbers(num) {
+//     let length = Math.floor(num / 2);
+//     let arr = []
   
-    for(let i=0; i<length;i++){
-      arr.push(Math.floor(Math.random() * (num+1)))
-    }
+//     for(let i=0; i<length;i++){
+//       arr.push(Math.floor(Math.random() * (num+1)))
+//     }
   
-    return arr
-  }
+//     return arr
+//   }
   
-getRandomArrNumbers(10);
+// getRandomArrNumbers(10);
 
 
 
-// 7 задание 
-function getRandomNumber(min, max) {
-   return Math.floor(Math.random() * (max - min + 1) + min);
-}
+// // 7 задание 
+// function getRandomNumber(min, max) {
+//    return Math.floor(Math.random() * (max - min + 1) + min);
+// }
   
   
-getRandomNumber(4, 12);
+// getRandomNumber(4, 12);
 
 
-// 8 задание 
-let date = new Date();
-console.log(date.toLocaleDateString('ru-RU'));
+// // 8 задание 
+// let date = new Date();
+// console.log(date.toLocaleDateString('ru-RU'));
 
 
-let currentDate = new Date();
-currentDate.setDate(currentDate.getDate() + 73);
-console.log(currentDate);
-
-
-
-// 9 задание 
-function getFullDate(d) {
-    return `Дата: ${d.getDate()} ${d
-      .getMonth()
-      .toLocaleString('ru-RU')} ${d.getFullYear()} \n 
-    Время: ${d.getHours() < 10? '0' + d.getHours():d.getHours()}:${d.getMinutes() < 10? '0' + d.getMinutes():d.getMinutes()}:${d.getSeconds() < 10? '0' + d.getSeconds():d.getSeconds()} `;
-  }
+// let currentDate = new Date();
+// currentDate.setDate(currentDate.getDate() + 73);
+// console.log(currentDate);
 
 
 
-// 10 задание 
-function getFullDate(d) {
-  return `Дата: ${d.getDate()} ${d
-    .getMonth()
-    .toLocaleString('ru-RU')} ${d.getFullYear()} \n 
-  Время: ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()} `;
-}
+// // 9 задание 
+// function getFullDate(d) {
+//     return `Дата: ${d.getDate()} ${d
+//       .getMonth()
+//       .toLocaleString('ru-RU')} ${d.getFullYear()} \n 
+//     Время: ${d.getHours() < 10? '0' + d.getHours():d.getHours()}:${d.getMinutes() < 10? '0' + d.getMinutes():d.getMinutes()}:${d.getSeconds() < 10? '0' + d.getSeconds():d.getSeconds()} `;
+//   }
+
+
+
+// // 10 задание 
+// function getFullDate(d) {
+//   return `Дата: ${d.getDate()} ${d
+//     .getMonth()
+//     .toLocaleString('ru-RU')} ${d.getFullYear()} \n 
+//   Время: ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()} `;
+// }
 
 
 // 11 задание
