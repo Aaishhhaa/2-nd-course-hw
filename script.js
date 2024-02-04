@@ -410,9 +410,8 @@ function filter(arr, ruleFunction) {
         if(ruleFunction(arr[i])) {
             filteredResult.push(arr[i]);
     }
-        
-    return filteredResult;
 }
+return filteredResult;
 }
 console.log(filter([3, -4, 1, 9], isPositive)); // Должен выводить [3, 1, 9]
 
